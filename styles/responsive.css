@@ -1,0 +1,40 @@
+
+/* conjunto de regras - se pagina for menor que 900px*/
+@media (max-width: 900px) {
+  /* tag page-home - ajuste do background - remove a imagem */
+  #page-home {
+    background-position-x: 70vw;
+
+  }
+/* alinha os itens da div content no centro da nova pagina */
+  #page-home .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Coloca o botão de cadastro na parte inferior da pagina */
+  #page-home header a {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+/* Alinha a tag main ao centro da pagina */
+  #page-home main {
+    align-items: center;
+  }
+}
+/* Consjunto de regras - quando o tamanho passar de 1700px posiciona a home-page e 40vw na horizontal */
+@media (min-width: 1700px){
+  #page-home {
+    background-position-x: 40vw;
+
+  }
+}
+/* Consjunto de regras - quando o tamanho for menor que 760 posiciona a home-page e 40vw na vertical */
+@media (max-height: 760px){
+  #page-home {
+    background-position-y: 200px;
+
+  }
+}

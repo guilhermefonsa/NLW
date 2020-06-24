@@ -1,0 +1,167 @@
+
+/* ########## BOX MODEL ########## */
+/* div page-home */
+#page-home {
+  /* define a altura da pagina */
+  height: 100vh;
+  /* aplica o backgound na pagina atraves de um svg (imagem em texto se adapta com os tamanhos de tela) */
+  background: url('../assets/home-background.svg');
+  /* ajusta a posição do backgound */
+  background-position: 35vw bottom;
+  /* ajusta para o backgound não repetir (Eixos X e Y) */
+  background-repeat: no-repeat;
+}
+
+/* classe content (conteudo do site) */
+#page-home .content {
+  /* define o tamanho que a tag vai ocupar na pagina */
+  width: 90%;
+  /* deine largura maxima (90% ou 1100px) */
+  max-width: 1100px;
+  /* define a altura da tag */
+  height: 100%;
+  /* define a margem do elemento content */
+  margin: 0 auto;
+  /* coloca a os elemento dentro da tabela flex */
+  display: flex;
+  /* Muda a disposição dos elementos no flex para coluna */
+  flex-direction: column;
+  /* define a altura da tag */
+
+}
+
+/* tag header */
+#page-home header {
+  /*coloca os elementos da header no formato flex (tabela)*/
+  display: flex;
+  /*alinha os itens da flex*/
+  align-items: center;
+  /*espaço entre as box da flex*/
+  justify-content: space-between;
+}
+
+/* tag a na header */
+#page-home header a {
+  /* Coloca elementos lado a lado */
+  display: flex;
+  /* define cor da fonte */
+  color: var(--title-color);
+  /* Define o peso da fonte */
+  font-weight: 700;
+
+}
+
+/* tag span na header */
+#page-home header a span {
+  /* separação dos elementos */
+  margin-right: 16px;
+  /* Coloca elementos lado a lado */
+  display: flex;
+  /* Coloca a imagem do login */
+  background-image: url('../assets/log-in.svg');
+  /* define a largura da imagem */
+  width: 20px;
+  /* define a altura da imagem */
+  height: 20px;
+}
+
+/* tag main na header */
+#page-home main {
+
+  /* Define o tamanho tag main */
+  max-width: 560px;
+  /* define que o elemento preenchera toda o espaço da box fex definida no content*/
+  flex: 1;
+  /* Coloca os elementos lado a lado */
+  display: flex;
+  /* organiza os elementos da flex em coluna */
+  flex-direction: column;
+  /* alinha o conteudo ao centro da flex box */
+  justify-content: center;
+
+}
+
+/* tag h1 do main */
+#page-home main h1 {
+  /* define o tamanho da fonte */
+  font-size: 54px;
+}
+
+/* tag p do main */
+#page-home main p {
+  /* define o tamanho da fonte */
+  font-size: 24px;
+  /* define a altura da linha do texto */
+  line-height: 38px;
+  /* define a margin do elemento */
+  margin-top: 24px;
+
+}
+
+/* tag a do main */
+#page-home main a {
+  /* define o tamanho do elemento na box */
+  width: 100%;
+  /* define o tamanho maximo do elelemtno */
+  max-width: 360px;
+  /* define a cor da tag*/
+  background: var(--primary-color);
+  /* define a altura */
+  height: 72px;
+  /* arredondamento das bordas do elemento */
+  border-radius: 8px;
+  /* coloca os elementos lado a lado */
+  display: flex;
+  /* alinha os itens ao centro do box flex */
+  align-items: center;
+  /* define a margem do elelemtno */
+  margin-top: 40px;
+  /* tempo da transição da animação */
+  transition: 400ms;
+}
+
+/* animação da tag a quando o mouse estiver em cima do elemento */
+#page-home main a:hover {
+  background-color: #2fb86e;
+
+}
+
+/* tag span do elemento a */
+#page-home main a span {
+  /* define a largura */
+  width: 72px;
+  /* define a altura */
+  height: 72px;
+  /* define a cor e a trasparencia */
+  background-color: rgba(0, 0, 0, 0.08);
+  /* ajusta a borda */
+  border-radius: 8px 0px 0px 8px;
+  /* coloca elementos lado a lado */
+  display: flex;
+  /* alinha elementos da flex */
+  align-items: center;
+  /* justifica o conteudo da flex */
+  justify-content: center;
+}
+
+/* criação de um pseudo-elemento no css*/
+#page-home main a span::after {
+  /* define o elelmento */
+  content: "";
+  /* define a imagem de fundo */
+  background-image: url('../assets/search.svg');
+  /* define a altura */
+  height: 20px;
+  /* define a largura */
+  width: 20px;
+}
+
+/* tag strong do elemento a */
+#page-home main a strong {
+  /* usa todo o espaço da box */
+  flex: 1;
+  /* define a cor da fonte */
+  color: white;
+  /* alinha o texto ao centro da box */
+  text-align: center;
+}

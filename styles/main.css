@@ -1,0 +1,47 @@
+/* ########## Variaveis Globais ########## */
+:root {
+  --title-color: #322153;
+  --primary-color: #34cb79;
+}
+
+/* ########## Config. Geral ########## */
+/* configuração do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  /* define que o padding vai ocupar todo o espaço da box */
+  box-sizing: border-box;
+}
+
+/* tag html */
+html {
+  /* Define a famulua da fonte na pagina toda */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* tag body */
+body {
+  /* define a cor de fundo */
+  background: #f0f0f5;
+  /* suavisar bordas - Chrome */
+  -webkit-font-smoothinh: antialiased;
+}
+
+/* Tag a global */
+a {
+  /* retira todas as marcações de link da pagina */
+  text-decoration: none;
+}
+
+/* Tags h global */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* define a familia da fonte */
+  font-family: 'Ubuntu', sans-serif;
+  /* define a cor da fonte */
+  color: var(--title-color)
+}
